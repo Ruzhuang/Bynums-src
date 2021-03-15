@@ -1,0 +1,168 @@
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#load {
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 228, 228, 0.863);
+}
+
+#loading {
+    font-size: 90px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid lightgray;
+    border-radius: 0.01in;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #517A85;
+    border-radius: 0.01in;
+}
+
+#text-box {
+    position: relative;
+    padding: 5%;
+    height: 90%;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#instruction {
+    display: grid;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 40px;
+    flex-grow: 1;
+    margin-right: 10px;
+    height: 50px;
+    line-height: 70px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #517A85;
+    color: #73bed3;
+    border-color: #73bed3;
+    cursor: pointer;
+}
+
+button {
+    font-family: "Gill Sans", sans-serif;
+    margin: 10px;
+    font-size: 25px;
+    color: #517A85;
+    width: 150px;
+    background-color: #73bed3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: solid 6px #517A85;
+}
+
+#do-not-show-button {
+    margin-top: 40px;
+    width: 400px;
+    margin-bottom: -20px;
+}
+
+#header-container {
+    background-color: #B1E1DF;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 0.25in;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.1in;
+    width: 70vw;
+    max-width: 500px;
+}
+
+.loader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(163, 163, 163, 0.87);
+}
+
+.loader>p {
+    font-size: 40px;
+    margin: 10px;
+}
+
+img {
+    border-radius: 0.1in;
+    width: 100%;
+}
+
+.important {
+    color: red;
+}
+
+.spin {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+/*
+#do-not-show-button.clicked{
+    background-color: #517A85;
+    color:#73bed3;
+    border-color: #73bed3;
+    cursor: not-allowed;
+}
+*/

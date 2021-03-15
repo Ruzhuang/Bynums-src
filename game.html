@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Bynum's Game with Precaution</title>
+</head>
+
+<body>
+    <div class="flex-box">
+        <div id="turn">
+            <div id="leftandright">
+                <div id="left">
+                    <div id="left-text">LEFT's turn</div>
+                </div>
+                <div id="right">
+                    <div id="right-text">RIGHT's turn</div>
+                </div>
+            </div>
+            <div id="menu-button">
+                <span class="line1"></span>
+                <span class="line"></span>
+                <span class="line3"></span>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="restart">Restart Game</div>
+            <div id="instruction">Instruction</div>
+        </div>
+        <div id="board-container">
+            <div class="board" id="board">
+                <!--
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    -->
+            </div>
+        </div>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <div id="choose-grid" class="choosegrid">
+        <label id="size-label"><p>Choose the dimension of the grid: (height x width)</p></label>
+        <div id="choose-grid-selectors">
+            <select name="height" id="height">
+      <optgroup id = "option-group">
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+        <option value = "11">11</option>
+        <option value = "12">12</option>
+        <option value = "13">13</option>
+        <option value = "14">14</option>
+        <option value = "15">15</option>
+        <option value = "16">16</option>
+        <option value = "17">17</option>
+        <option value = "18">18</option>
+        <option value = "19">19</option>
+        <option value = "20">20</option>
+      </optgroup>
+    </select>
+            <div id="x"> x </div>
+            <select name="width" id="width">
+      <optgroup>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+        <option value = "4">4</option>
+        <option value = "5">5</option>
+        <option value = "6">6</option>
+        <option value = "7">7</option>
+        <option value = "8">8</option>
+        <option value = "9">9</option>
+        <option value = "10">10</option>
+        <option value = "11">11</option>
+        <option value = "12">12</option>
+        <option value = "13">13</option>
+        <option value = "14">14</option>
+        <option value = "15">15</option>
+        <option value = "16">16</option>
+        <option value = "17">17</option>
+        <option value = "18">18</option>
+        <option value = "19">19</option>
+        <option value = "20">20</option>
+      </optgroup>
+    </select>
+        </div>
+        <div id="set-button-wrapper">
+            <input id="set-button" type="button" value="Set">
+        </div>
+
+    </div>
+</body>
+
+</html>
