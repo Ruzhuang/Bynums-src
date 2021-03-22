@@ -363,3 +363,51 @@ body {
 .winning-message.show {
     display: flex;
 }
+
+@media (max-width:800px) {
+    #choose-grid {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width:550px) {
+    #menu-button {
+        position: relative;
+        flex-shrink: 0;
+        width: 70px;
+        height: 70px;
+        right: 0px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #leftandright {
+        flex-shrink: 1;
+        width: auto;
+        margin-left: 5px;
+    }
+    #turn {
+        justify-content: flex-end;
+        padding-left: 0px;
+    }
+    #right-text,
+    #left-text {
+        font-size: 5vw;
+    }
+    #menu {
+        width: 100vw;
+        border-radius: 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        height: 60vh;
+    }
+    #menu.show {
+        justify-content: center;
+    }
+    #restart {
+        margin-top: 0px;
+    }
+    #set-button {
+        border-radius: 20px;
+        padding: 0;
+    }
+}
