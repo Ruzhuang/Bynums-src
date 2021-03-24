@@ -1,4 +1,3 @@
-
 if (localStorage.getItem("show") == "false" && localStorage.getItem("forceOpen") == null) {
     console.log("here!");
     window.location.href = "game.html";
@@ -10,18 +9,6 @@ var imgs = document.images,
     len = imgs.length,
     counter = 1;
 
-[].forEach.call(imgs, function(img) {
-    if (img.complete) {
-        document.getElementById("loader" + counter).style.display = "none";
-    } else {
-        img.addEventListener('load', loadComplete(counter), false);
-    }
-    counter++;
-});
-
-function loadComplete(i) {
-    document.getElementById("loader" + i).style.display = "none";
-}
 const button = document.getElementById("skip");
 button.addEventListener("click", skip);
 
