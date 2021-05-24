@@ -1,0 +1,39 @@
+/*
+ * Bynums.cgs
+ *
+ * Created by zw531 on 2021-5-14
+ */
+
+class Bynums extends Game
+
+    var width;
+    var height;
+    
+    method Bynums(Number height, Number width)
+
+    end
+    
+    override method Options(Player player)
+        options := {};
+        if width == 1 or height == 1 or width ==0 or height == 0 then
+            return {};
+        end
+        
+        if player == Player.Left then
+            a := ((width+1)/2).Floor;
+            for i from 1 to a do
+                    options.Add(Bynums(height,width-i)+Bynums(height,i-1));
+            end
+        else
+            b := ((height+1)/2).Floor;
+            for j from 1 to b do
+                options.Add(Bynums(height-j,width)+Bynums(j-1,width));
+            end
+        end
+        return options;
+    end
+    
+    override property ToString.get
+        return "G[" + height.ToString + " x " + width.ToString + "]";
+    end
+end
